@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFWinApp1", "WPFWinApp1\WPFWinApp1.csproj", "{8EFC6FAB-EEEE-4BA8-8263-2F4A7560210E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Core", "App.Core\App.Core.csproj", "{D8035C76-FA4B-4F6B-A365-BCDAFFF3660F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Models", "App.Models\App.Models.csproj", "{CDF961E3-11AB-4A19-91E1-7DDD3C43BDDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{8EFC6FAB-EEEE-4BA8-8263-2F4A7560210E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EFC6FAB-EEEE-4BA8-8263-2F4A7560210E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EFC6FAB-EEEE-4BA8-8263-2F4A7560210E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8035C76-FA4B-4F6B-A365-BCDAFFF3660F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8035C76-FA4B-4F6B-A365-BCDAFFF3660F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8035C76-FA4B-4F6B-A365-BCDAFFF3660F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8035C76-FA4B-4F6B-A365-BCDAFFF3660F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF961E3-11AB-4A19-91E1-7DDD3C43BDDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF961E3-11AB-4A19-91E1-7DDD3C43BDDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF961E3-11AB-4A19-91E1-7DDD3C43BDDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF961E3-11AB-4A19-91E1-7DDD3C43BDDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

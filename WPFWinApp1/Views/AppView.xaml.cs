@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPFWinApp1
+namespace WPFWinApp1.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AppView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AppView : UserControl
     {
-        public MainWindow()
+        public AppView()
         {
             InitializeComponent();
         }
