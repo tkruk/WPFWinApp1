@@ -24,7 +24,7 @@ namespace UnitTestExperiments.Experiments
 
             var rtnVal = objInternals.Experiment2();
 
-            Assert.AreEqual(true, rtnVal);
+            Assert.AreEqual(false, rtnVal);
         }
     }
 }

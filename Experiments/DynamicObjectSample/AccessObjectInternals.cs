@@ -33,9 +33,9 @@ namespace Experiments.DynamicObjectSample
 
             try
             {
-                dynamic exposedFileObj = new ExposedObjectSimple(typeof(System.IO.File));
+                dynamic exposedFileObj = ExposedClass.Create(typeof(System.IO.File));
 
-                var fileExists = exposedFileObj.InternalExists("somefile.txt");
+                rtnVal = exposedFileObj.InternalExists("somefile.txt");
             }
             catch (Exception ex)
             {
