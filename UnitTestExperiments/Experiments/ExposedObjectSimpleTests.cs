@@ -16,5 +16,15 @@ namespace UnitTestExperiments.Experiments
 
             Assert.AreEqual(true, rtnVal);
         }
+
+        [TestMethod]
+        public void TestCallingPrivateStaticMethod()
+        {
+            var objInternals = new AccessObjectInternals();
+
+            var rtnVal = objInternals.Experiment2();
+
+            Assert.AreEqual(true, rtnVal);
+        }
     }
 }

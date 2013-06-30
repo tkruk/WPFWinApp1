@@ -26,5 +26,24 @@ namespace Experiments.DynamicObjectSample
 
             return rtnVal;
         }
+
+        public bool Experiment2()
+        {
+            bool rtnVal = true;
+
+            try
+            {
+                dynamic exposedFileObj = new ExposedObjectSimple(typeof(System.IO.File));
+
+                var fileExists = exposedFileObj.InternalExists("somefile.txt");
+            }
+            catch (Exception ex)
+            {
+                rtnVal = false;
+                Debug.WriteLine("Error: " + ex.Message);
+            }
+
+            return rtnVal;
+        }
     }
 }

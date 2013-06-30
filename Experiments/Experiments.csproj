@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DynamicObjectSample\AccessObjectInternals.cs" />
+    <Compile Include="DynamicObjectSample\ExposedClass.cs" />
     <Compile Include="DynamicObjectSample\ExposedObjectSimple.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
