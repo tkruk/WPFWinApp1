@@ -43,6 +43,7 @@
     <Compile Include="DynamicObjectSample\ExposedClass.cs" />
     <Compile Include="DynamicObjectSample\ExposedHelper.cs" />
     <Compile Include="DynamicObjectSample\ExposedObjectSimple.cs" />
+    <Compile Include="Other\PlayingWithLINQ.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
