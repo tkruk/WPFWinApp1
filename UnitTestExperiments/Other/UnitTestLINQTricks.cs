@@ -52,5 +52,36 @@ namespace UnitTestExperiments.Other
 
             Assert.AreEqual(10, rtnVal.Length);
         }
+
+        [TestMethod]
+        public void TestExtensionMethods()
+        {
+            var rtnVal = 1.intTo(10);
+
+            rtnVal.DisplayAll();
+
+            Assert.AreEqual(10, rtnVal.Count());
+        }
+
+        [TestMethod]
+        public void TestExtensionMethodsPartTwo()
+        {
+            var rtnVal = 1.intTo(30).Where(i => i % 2 == 0);
+            rtnVal.DisplayAll();
+
+            Assert.AreEqual(15, rtnVal.Count());
+        }
+
+        [TestMethod]
+        public void TestExtensionMehodsWithFibonacciSequence()
+        {
+            var rtnVal = ExtensionMethods.FibonacciSequence.Take(10);
+            rtnVal.DisplayAll();
+
+            Assert.AreEqual(10, rtnVal.Count());
+            Assert.AreEqual(1, rtnVal.ToArray()[1]);
+            Assert.AreEqual(1, rtnVal.ToArray()[2]);
+
+        }
     }
 }
