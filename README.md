@@ -1,4 +1,4 @@
 WPFWinApp1
 ==========
 
-WPF app for testing
+Solution to test/play/experiment with .NET Framework. Started as WPF application, but turned into multiple projects.
