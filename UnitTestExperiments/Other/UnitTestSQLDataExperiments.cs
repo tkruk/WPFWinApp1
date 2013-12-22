@@ -22,6 +22,7 @@ namespace UnitTestExperiments.Other
             Assert.AreEqual(1, rtnVal);
         }
 
+        [Ignore]
         [TestMethod]
         public void TestMultipleInsertsTraceWithStopWatch()
         {
