@@ -22,19 +22,21 @@ namespace UnitTestExperiments.Other
             Assert.AreEqual(1, rtnVal);
         }
 
-        [Ignore]
         [TestMethod]
         public void TestMultipleInsertsTraceWithStopWatch()
         {
             Stopwatch watch = new Stopwatch();
-            int count = 100000;
+            int count = 50000;
             var dataExperiments = new SQLDataExperiments();
+
+            // Before running the test we want to clear all data from the table.
+            dataExperiments.DeleteAllAccountData();
 
             watch.Start();
             dataExperiments.InsertMultipleAccounts(count);
             watch.Stop();
 
-            Console.WriteLine("Measured time: " + watch.Elapsed.TotalMilliseconds + " ms.");
+            Debug.WriteLine("Measured time: " + watch.Elapsed.TotalMilliseconds + " ms.");
 
             var rtnVal = dataExperiments.CountRecordsInAccountTable();
 

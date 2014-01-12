@@ -44,6 +44,7 @@
     <Compile Include="DynamicObjectSample\ExposedHelper.cs" />
     <Compile Include="DynamicObjectSample\ExposedObjectSimple.cs" />
     <Compile Include="Other\ExtensionMethods.cs" />
+    <Compile Include="Other\GenericList.cs" />
     <Compile Include="Other\PlayingWithLINQ.cs" />
     <Compile Include="Other\SQLDataExperiments.cs" />
     <Compile Include="Other\UnixTime.cs" />

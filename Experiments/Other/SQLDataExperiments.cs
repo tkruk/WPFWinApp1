@@ -1,6 +1,8 @@
 ﻿using System;
-using System.Linq;
 using System.Data.SqlClient;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Experiments.Other
 {
@@ -68,7 +70,8 @@ namespace Experiments.Other
             
             for (int i = 0; i < count; i++)
             {
-                var accountId = rand.Next().ToString();
+                //var accountId = rand.Next().ToString();
+                var accountId = i.ToString();
                 var description = accountId;
 
                 InsertAccountData(accountId, description);

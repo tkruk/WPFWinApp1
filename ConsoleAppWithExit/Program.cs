@@ -26,6 +26,8 @@ namespace ConsoleAppWithExit
             autoResetEvent.WaitOne();
             cancel = true;
             Console.WriteLine("Shutting down..");
+            Console.WriteLine("Press ENTER key to close...");
+            Console.Read();
         }
 
         private static void Worker()
