@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<script>
+    document.write("Testing CORS...<br><br>");
+</script>
+
+<div>
+    <select id="method">
+        <option value="get">GET</option>
+        <option value="post">POST</option>
+        <option value="put">PUT</option>
+    </select>
+    <input type="button" value="Send Request" onclick="sendRequest()" />
+    <span id="value1">(Result)</span>
+</div>
+
+@section scripts{
+    <script>
+        var serviceUrl = "http://localhost:49646/api/test";
+
+        function sendRequest() {
+            var method = $('#method').val();
+
+            $.ajax({
+                type: method,
+                url: serviceUrl
+            }).done(function (data) {
+                $('#value1').text(data);
+            }).error(function (jqXHR, textStatus, errrorThrown) {
+                $('#value1').text(jqXHR.responseText || textStatus);
+            });
+        }
+    </script>
+}
+
+
+
