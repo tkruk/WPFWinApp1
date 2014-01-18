@@ -83,5 +83,17 @@ namespace UnitTestExperiments.Other
             Assert.AreEqual(1, rtnVal.ToArray()[2]);
 
         }
+
+        [TestMethod]
+        public void TestMinFucntion()
+        {
+            var tricks = new PlayingWithLINQ();
+            var rtnVal = tricks.Min<int>(9, 6);
+
+            var rtnVal2 = tricks.Min(100, 99);
+
+            Assert.AreEqual(99, rtnVal2);
+            Assert.AreEqual(6, rtnVal);
+        }
     }
 }
