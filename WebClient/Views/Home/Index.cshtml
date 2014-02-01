@@ -1,22 +1,29 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Login Page";
 }
 
-<h2>Index</h2>
-
-<script>
-    document.write("Testing CORS...<br><br>");
-</script>
+<h2>Login Page</h2>
 
 <div>
-    <select id="method">
+    @*<select id="method">
         <option value="get">GET</option>
         <option value="post">POST</option>
         <option value="put">PUT</option>
-    </select>
-    <input type="button" value="Send Request" onclick="sendRequest()" />
-    <span id="value1">(Result)</span>
+    </select>*@
+    <div class="userInfoArea">
+        <label id="userIDLabel">User ID</label>
+        <input type="text" id="userID" value="user123"/>
+        <br />
+        <label id="passLabel">Password</label>
+        <input type="password" id="pwd" value="test123"/>
+        <br />
+        <input id="submitButton" type="button" value="Login" onclick="sendRequest()" />
+    </div>
+    
+    <div class="reqResult">
+        <span id="value1">(Result)</span>
+    </div>
 </div>
 
 @section scripts{
@@ -24,10 +31,12 @@
         var serviceUrl = "http://localhost:49646/api/test";
 
         function sendRequest() {
-            var method = $('#method').val();
+            var userId = $('#userID').val();
+            var pwd = $('#pwd').val();
 
             $.ajax({
-                type: method,
+                data: { 'userID': userId, 'pwd': pwd },
+                type: 'get',
                 url: serviceUrl
             }).done(function (data) {
                 $('#value1').text(data);
