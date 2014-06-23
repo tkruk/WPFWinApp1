@@ -42,6 +42,7 @@
                 $('#value1').text(data);
             }).error(function (jqXHR, textStatus, errrorThrown) {
                 $('#value1').text(jqXHR.responseText || textStatus);
+                window.location.replace('/Practice');
             });
         }
     </script>
