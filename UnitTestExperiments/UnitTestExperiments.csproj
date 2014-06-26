@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Experiments\ExposedObjectSimpleTests.cs" />
     <Compile Include="Other\UnitTestGenerics.cs" />
+    <Compile Include="Other\UnitTestSampleClass.cs" />
     <Compile Include="Other\UnitTestSQLDataExperiments.cs" />
     <Compile Include="Other\UnitTestUnixTime.cs" />
     <Compile Include="Other\UnitTestLINQTricks.cs" />

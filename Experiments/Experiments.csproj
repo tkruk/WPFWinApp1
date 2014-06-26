@@ -47,6 +47,7 @@
     <Compile Include="Other\ExtensionMethods.cs" />
     <Compile Include="Other\GenericList.cs" />
     <Compile Include="Other\PlayingWithLINQ.cs" />
+    <Compile Include="Other\SampleClas.cs" />
     <Compile Include="Other\SQLDataExperiments.cs" />
     <Compile Include="Other\UnixTime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
