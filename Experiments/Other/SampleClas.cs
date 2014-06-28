@@ -11,5 +11,10 @@ namespace Experiments.Other
     {
         public static int X = Y;
         public static int Y = 3;
+
+        ~SampleClass()
+        {
+            Console.WriteLine("destructor for SammpleClass");
+        }
     }
 }
